@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> To do list Altran </title>
+
+<style>
+.intestazione{ color:white;
+background-color:gold;
+height:70px;
+}
+
+.corpo{ background-color:gainsboro;
+}
+
+.data {background-color:gray;
+color:white;}
+
+.completa {background-color:silver;}
+
+
+div {height: 130px;
+width: 400px;
+background-color:steelblue;
+color:white;
+letter-spacing:0.1 em;
+border-radius:5px;
+text-align:justify;
+box-shadow: 5px 5px lightskyblue;
+
+}
+
+*{font-family:century gothic}
+</style>
+
+
+</head>
+
+<body>
+
+<img src="img/altranlogo.png" alt="logodiAltran" align="center-left" <br>
+
+<h1 style=color:steelblue; font-size:35px"><strong><u>TO DO LIST</u></strong></h1>
+
+<div>
+<h2 style="font-size:20px">PROJECT NAME:<br>
+<em>Costruzione sito Wordpress</em></h2>
+<h2 style="font-size:20px">RESPONSABILE:<em> Porchia Manuela</em></h2>
+<h2 style="font-size:20px">DEADLINE: <em>31/05/2021</em></h2>
+</div>
+<br>
+
+<table>
+
+<thead>
+
+<tr class="intestazione">
+
+<th>PROJECT/TASK</th>
+<th>BUDGET</th>
+<th>RESPONSABILE</th>
+<th>STATO DEL PROGETTO</th>
+<th>PRIORITA'</th>
+<th>COMPLETAMENTO</th>
+<th>DATA SCADENZA</th>
+<th>NOTE</th>
+</tr>
+
+
+
+<tr class="corpo">
+<td><strong>Nozioni di html e css</strong></td>
+<td></td>
+<td><em>Manuela Porchia</em></td>
+<td align="center">In corso</td>
+<td align="center">Alta</td>
+<td class="completa"> <meter value="50" min="0" max="100">50% out of 100 </meter></td>
+
+<!--ricorda c'è anche il tag progress per mostrare l'avanzamento di un compito.-->
+<td class="data"><strong>30/04/2021</strong></td>
+<td></td>
+</tr>
+
+<tr class="corpo">
+<td><strong>Esercizi</strong></td>
+<td></td>
+<td><em>Manuela Porchia</em></td>
+<td align="center">In corso</td>
+<td align="center">Alta</td>
+<td class="completa"><meter value="30" min="0" max="100">30% out of 100 </meter></td>
+<td class="data"><strong>30/04/2021</strong></td>
+<td></td>
+</tr>
+
+<tr class="corpo">
+<td><strong>Nozioni base di JQuery e Javasript</strong></td>
+<td></td>
+<td><em>Manuela Porchia</em></td>
+<td align="center">Pianificata</td>
+<td align="center">Alta</td>
+<td class="completa"><meter value="10" min="0" max="100">10% out of 100 </meter></td>
+<td class="data"><strong>09/05/2021</strong></td>
+<td></td>
+</tr>
+
+<tr class="corpo">
+<td><strong>Esercizi</strong></td>
+<td></td>
+<td><em>Manuela Porchia</em></td>
+<td align="center">Pianificata</td>
+<td align="center">Alta</td>
+<td class="completa"><meter value="0" min="0" max="100">0% out of 100 </meter></td>
+<td class="data"><strong>09/05/2021</strong></td>
+<td></td>
+</tr>
+
+<tr class="corpo">
+<td><strong>Nozioni Base di PHP</strong></td>
+<td></td>
+<td><em>Manuela Porchia</em></td>
+<td align="center">Pianificata</td>
+<td align="center">Alta</td>
+<td class="completa"><meter value="0" min="0" max="100">0% out of 100 </meter></td>
+<td class="data"><strong>17/05/2021</strong></td>
+<td></td>
+</tr>
+
+<tr class="corpo">
+<td><strong>Costruzione Grafica del Sito</strong></td>
+<td></td>
+<td><em>Manuela Porchia</em></td>
+<td align="center">Pianificata</td>
+<td align="center">Alta</td>
+<td class="completa"><meter value="0" min="0" max="100">0% out of 100 </meter></td>
+<td class="data"><strong>23/05/2021</strong></td>
+<td></td>
+</tr>
+
+
+<tr class="corpo">
+<td><strong>Recupero Contenuti</strong></td>
+<td></td>
+<td><em>Manuela Porchia</em></td>
+<td align="center">Pianificata</td>
+<td align="center">Alta</td>
+<td class="completa"><meter value="0" min="0" max="100">0% out of 100 </meter></td>
+<td class="data"><strong>31/05/2021</strong></td>
+<td></td>
+</tr>
+
+
+</thead>
+
+
+
+
+</table>
+
+<!-- prova questi tag e attributi per menù a scelta nella tabella
+
+<form action="/action_page.php" method="get">
+  <label for="browser">Choose your browser from the list:</label>
+  <input list="browsers" name="browser" id="browser">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>-->
+
+
+
+
+</body>
+
+
+</html>
