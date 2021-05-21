@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>To do List</title>
+
+<style>
+
+.logo{
+width:300px;
+margin: auto;}
+
+.box {margin-left:650px; 
+margin-top:30px;
+background-color:lightskyblue;
+}
+
+.lente {float:left;
+width:35px;
+margin-left:600px;
+margin-top:-28px;}
+
+.colonna { 
+background-color:steelblue;
+width:33%;
+height:500px;
+display:inline-block;
+vertical-align:top;
+border-radius:10px
+}
+
+.testata{
+color:white;
+font-family:century gothic;
+font-size:35px;
+background-color:gold;
+width:33%;
+height:40px;
+border-radius:20px;
+text-align:center;
+margin-top:100px;
+display:inline-block;
+}
+
+.task{
+color:white;
+font-family:century gothic;
+font-size:25px;
+background-color:#DCDCDC;
+width:33%;
+height:40px;
+border-radius:20px;
+text-align: center;
+margin: auto;
+margin-top: 30px;
+
+}
+
+
+</style> 
+
+
+</head>
+
+<div class="logo">
+<img src="img/altranlogo.png">
+</div>
+<br>
+
+
+<form>
+<input class="box" type="text" size"20" placeholder="Search name or task">
+</form>
+
+
+
+<body>
+
+<img src="img/lente.png" class="lente">
+<br>
+
+
+<div class="testata" ><strong> TO DO</strong></div>
+<div class="testata"><strong> DOING</strong> </div>
+<div class="testata"><strong> DONE</strong> </div>
+<br><br>
+
+<div class="colonna">
+<div class="task">TASK1</div><br>
+
+</div>
+
+<div class="colonna">
+<div class="task">TASK1</div><br>
+<div class="task">TASK2</div><br>
+<div class="task">TASK3</div>
+</div>
+
+<div class="colonna">
+<div class="task">TASK1</div> <br>
+<div></div>
+
+</div>
+
+</body>
+
+
+</html>
