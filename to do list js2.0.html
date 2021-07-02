@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>To do List</title>
+
+<style>
+
+.logo{
+width:300px;
+margin: auto;}
+
+.box {margin-left:650px; 
+margin-top:30px;
+background-color:lightskyblue;
+}
+
+.lente {float:left;
+width:35px;
+margin-left:600px;
+margin-top:-28px;}
+
+.colonna { 
+background-color:steelblue;
+width:33%;
+height:800px;
+display:inline-block;
+vertical-align:top;
+border-radius:10px
+}
+
+.testata{
+color:white;
+font-family:century gothic;
+font-size:35px;
+background-color:gold;
+width:33%;
+height:40px;
+border-radius:20px;
+text-align:center;
+margin-top:100px;
+display:inline-block;
+}
+
+#task1, #task2, #task3, #task4, #task5 {
+color:white;
+font-family:century gothic;
+font-size:25px;
+background-color:#DCDCDC;
+width:70%;
+height:100px;
+border-radius:20px;
+text-align: center;
+margin: auto;
+margin-top: 30px;
+cursor: pointer;
+}
+
+
+</style> 
+<script>
+
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+ 
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+
+</script>
+
+</head>
+
+<div class="logo">
+<img src="img/altranlogo.png">
+</div>
+<br>
+
+
+<form>
+<input class="box" type="text" size"20" placeholder="Search name or task">
+</form>
+
+
+
+<body>
+
+<img src="img/lente.png" class="lente">
+<br>
+
+
+<div class="testata" ><strong> TO DO</strong></div>
+<div class="testata"><strong> DOING</strong> </div>
+<div class="testata"><strong> DONE</strong> </div>
+<br><br>
+
+<div class="colonna">
+<div id="task1" draggable="true" ondragstart="drag(event)" >Nozioni HTML CSS</div><br>
+<div id="task2" draggable="true" ondragstart="drag(event)" >Esercizi di HTML e CSS</div><br>
+<div id="task3" draggable="true" ondragstart="drag(event)" >Nozioni di Jquery e Javascript</div><br>
+<div id="task4" draggable="true" ondragstart="drag(event)" >Nozioni base di PHP</div><br>
+<div id="task5" draggable="true" ondragstart="drag(event)" >Esercizi programmazione Sito</div><br>
+
+</div>
+
+<div class="colonna" ondragover="allowDrop(event)" ondrop="drop(event)" >
+
+</div>
+
+<div class="colonna" ondragover="allowDrop(event)" ondrop="drop(event)" >
+
+<div></div>
+
+</div>
+
+
+
+</body>
+
+
+</html>
